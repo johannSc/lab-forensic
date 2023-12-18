@@ -18,7 +18,7 @@ Récupérez le fichier `anonyme.png` dans le répertoire `TP` du dépot git. Je 
 
 ### Listing fichiers
 
-find & locate: trouvez un fichier ou un dossier sous linux
+`find & locate`: trouvez un fichier ou un dossier sous linux
 
 TP:
 * Trouvez ou se trouve le fichier `nom_fichier` sur la VM Kali.
