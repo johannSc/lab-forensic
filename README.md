@@ -8,10 +8,10 @@ L’analyse Forensic désigne l’investigation effectuée sur le système d’i
 
 Quelques outils à utiliser pour avoir des informations pertinentes sur un fichier sous Linux.
 
-`file` : le type de fichier
-`strings`: extrait sur la console les caractères affichables d'un fichier
-`exiftool`: affichier / modifier les métadonnées d'un fichier
-`binwalk`: outil permettant de rechercher dans une image binaire donnée des fichiers incorporés et du code exécutable
+* `file` : le type de fichier
+* `strings`: extrait sur la console les caractères affichables d'un fichier
+* `exiftool`: affichier / modifier les métadonnées d'un fichier
+* `binwalk`: outil permettant de rechercher dans une image binaire donnée des fichiers incorporés et du code exécutable
 
 TP:
 Récupérez le fichier `anonyme.png` dans le répertoire `TP` du dépot git. Je souhaite connaitre qui est le créateur de cette image?
@@ -25,6 +25,7 @@ TP:
 * Trouvez tous les fichiers de type `.txt` sur la VM Kali
 
 ### Fichiers supprimés
+
 foremost / photorec / dd_rescue / scalpel
 
 TP:
