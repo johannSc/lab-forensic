@@ -30,17 +30,40 @@ Regardez les différents outils suivants:
 `foremost / photorec / dd_rescue / scalpel`
 
 TP: 
-* Créez le répertoire puis un fichier dans /var/tmp/foremost:
-`mkdir /var/tmp/foremost/ && touch /var/tmp/foremost/toto`
 
-* Effectuez une recherche d'éléments supprimés depuis foremost:
-`foremost -w -i /var/tmp/foremost -o /var/tmp/ -T`
+* Installez l'outil scalpel:
+
+`sudo apt-get install scalpel`
+  
+* Paramétrez le fichier de configuration:
+
+`nano /etc/scalpel/scalpel.conf`
+
+Puis décommentez les lignes adéquates (png dans notre cas)
+
+* Créez le répertoire puis copiez le fichier `anonyme.png` dans celui ci:
+
+`mkdir /var/tmp/scalpel/ && cp /chemin/anonyme.png /var/tmp/scalpel`
+
+* Copiez l'image dd (image.dd) qui se trouve dans le répertoire `TP` du dépot git sur votre VM Kali. Montez ensuite l'image:
+
+`sudo mkdir /media/image`
+
+`sudo mount -t auto -o loop /chemin/image.dd /media/image/`
+
+Vous pouvez désormais parcourir le répertoire /media/image, afin de faire une première recherche voir si vous trouvez un fichier contenant une donnée sensible.
+
+* Effectuez une recherche d'éléments supprimés:
+
+Avec scalpel préalablement installé, on va scanner l'image dd voir si des éléments auraient été supprimés:
+
+``
 
 Quels résultats?
 
 * Supprimez le fichier toto préalablement créé, puis relancez un scan
 
-* 
+Retrouvez vous
 
 
 ## Capture mémoire
