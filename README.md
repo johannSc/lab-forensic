@@ -26,9 +26,21 @@ TP:
 
 ### Fichiers supprimés
 
-foremost / photorec / dd_rescue / scalpel
+Regardez les différents outils suivants:
+`foremost / photorec / dd_rescue / scalpel`
 
-TP:
+TP: 
+* Créez le répertoire puis un fichier dans /var/tmp/foremost:
+`mkdir /var/tmp/foremost/ && touch /var/tmp/foremost/toto`
+
+* Effectuez une recherche d'éléments supprimés depuis foremost:
+`foremost -w -i /var/tmp/foremost -o /var/tmp/ -T`
+
+Quels résultats?
+
+* Supprimez le fichier toto préalablement créé, puis relancez un scan
+
+* 
 
 
 ## Capture mémoire
