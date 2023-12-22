@@ -14,15 +14,16 @@ Quelques outils à utiliser pour avoir des informations pertinentes sur un fichi
 * `binwalk`: outil permettant de rechercher dans une image binaire donnée des fichiers incorporés et du code exécutable
 
 TP:
-Récupérez le fichier `anonyme.png` dans le répertoire `TP` du dépot git. Je souhaite connaitre qui est le créateur de cette image?
+Récupérez le fichier `anonyme.png` dans le répertoire du dépot git. Je souhaite connaitre qui est le créateur de cette image?
 
 ### Listing fichiers
 
 `find & locate`: trouvez un fichier ou un dossier sous linux
 
 TP:
-* Trouvez ou se trouve le fichier `nom_fichier` sur la VM Kali.
-* Trouvez tous les fichiers de type `.txt` sur la VM Kali
+* Trouvez ou se trouve le fichier `boot.log` sur la VM Kali.
+
+* Trouvez tous les fichiers de type `.txt` sur la VM Kali mais uniquement dans le répertoire /var
 
 ### Fichiers supprimés
 
@@ -31,39 +32,25 @@ Regardez les différents outils suivants:
 
 TP: 
 
-* Installez l'outil scalpel:
-
-`sudo apt-get install scalpel`
-  
-* Paramétrez le fichier de configuration:
-
-`nano /etc/scalpel/scalpel.conf`
-
-Puis décommentez les lignes adéquates (png dans notre cas)
-
-* Créez le répertoire puis copiez le fichier `anonyme.png` dans celui ci:
-
-`mkdir /var/tmp/scalpel/ && cp /chemin/anonyme.png /var/tmp/scalpel`
-
-* Copiez l'image dd (image.dd) qui se trouve dans le répertoire `TP` du dépot git sur votre VM Kali. Montez ensuite l'image:
+On va essayer à partir d'une image de retrouver des informations cachées ou supprimées.
+Au préalable vous pouvez utiliser la commande suivante pour monter l'image `image.dd` présente dans le dépot afin de voir ce qu'elle contient:
 
 `sudo mkdir /media/image`
 
 `sudo mount -t auto -o loop /chemin/image.dd /media/image/`
 
-Vous pouvez désormais parcourir le répertoire /media/image, afin de faire une première recherche voir si vous trouvez un fichier contenant une donnée sensible.
+Vous pouvez ensuite naviguer dans /media/image et voir son contenu.
 
-* Effectuez une recherche d'éléments supprimés:
+* Installez l'outil testdisk, puis essayer d'utiliser celui ci avec l'image fournie dans le dépot git:
 
-Avec scalpel préalablement installé, on va scanner l'image dd voir si des éléments auraient été supprimés:
+Voyez vous des secrets ou informations cachées?
+  
+* Maintenant utilisons l'outil `scalpel`. Paramétrez le fichier de configuration:
 
-``
+`nano /etc/scalpel/scalpel.conf`
 
-Quels résultats?
+Des résultats plus probants?
 
-* Supprimez le fichier toto préalablement créé, puis relancez un scan
-
-Retrouvez vous
 
 
 ## Capture mémoire
