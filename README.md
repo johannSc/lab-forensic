@@ -20,7 +20,7 @@ Récupérez le fichier `anonyme.png` dans le répertoire du dépot git. Je souha
 
 `find & locate`: trouvez un fichier ou un dossier sous linux
 
-TP:
+$${\color{green}TP}$$
 * Trouvez ou se trouve le fichier `boot.log` sur la VM Kali.
 
 * Trouvez tous les fichiers de type `.txt` sur la VM Kali mais uniquement dans le répertoire /var
@@ -33,7 +33,7 @@ Regardez les différents outils suivants:
 testdisk (photorec) / dd_rescue / scalpel (foremost)
 ```
 
-TP: 
+$${\color{green}TP}$$
 
 On va essayer à partir d'une image de retrouver des informations cachées ou supprimées.
 Au préalable vous pouvez utiliser la commande suivante pour monter l'image `image.dd` présente dans le dépot afin de voir ce qu'elle contient:
@@ -65,7 +65,8 @@ Des résultats plus probants?
 
 volatility
 
-TP: (https://www.root-me.org/fr/Challenges/Forensic/Command-Control-niveau-2)
+$${\color{green}TP}$$
+(https://www.root-me.org/fr/Challenges/Forensic/Command-Control-niveau-2)
 
 
 
