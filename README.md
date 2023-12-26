@@ -29,7 +29,7 @@ TP:
 
 Regardez les différents outils suivants:
 
-```markdown
+```
 testdisk (photorec) / dd_rescue / scalpel (foremost)
 ```
 
