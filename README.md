@@ -102,7 +102,7 @@ python3 vol.py -h
   - Il est nécessaire pour volatility de connaitre le type d'image (en gros la version de l'OS) avant toute chose. Pour cela une unique commande:
  
 ```
-volatility  -f ch2.dmp imageinfo
+python3  vol.py  -f ch2.dmp imageinfo
 ```
 
 Il n'est pas rare que volatility propose plusieurs versions. En général choisissez la plus récente.
