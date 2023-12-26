@@ -70,12 +70,29 @@ Des résultats plus probants?
 
 ## Capture mémoire
 
-volatility
+Les informations importantes ne se situent pas forcément dans les fichiers (comme sur le fichier image vu précédémment) mais peuvent se trouver en mémoire.
+
+Un outil très pratique permet de faire un `dump` de la mémoire, et ensuite de pouvoir la parcourir: `volatility`
+
+
 
 $${\color{green}TP}$$
-(https://www.root-me.org/fr/Challenges/Forensic/Command-Control-niveau-2)
 
+* Installation de volatility
 
+Tout d'abord clonez le dépot:
+```
+git clone https://github.com/volatilityfoundation/volatility3
+```
 
+Puis lancez l'installation des dépendances:
+```
+pip3 install -r requirements-minimal.txt
+```
 
+Testez ensuite d'exécuter volatility:
+```
+python3 vol.py -h
+```
 
+* Téléchargez le dump mémoire qu'on va analyser: https://sandbox.scourzic.net/td/ch2.tbz2
