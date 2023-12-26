@@ -95,11 +95,17 @@ Testez ensuite d'exécuter volatility:
 python3 vol.py -h
 ```
 
+=> Nous utilisons la version3 qui a beaucoup de changements vis à vis de l'ancienne version, un site avec les `cheatsheet` pour les deux versions:
+
+https://blog.onfvp.com/post/volatility-cheatsheet/
+
 * Téléchargez le dump mémoire qu'on va analyser: https://sandbox.scourzic.net/td/ch2.tbz2
 
 * Quelques conseils pour bien démarrer:
 
-  - Il est nécessaire pour volatility de connaitre le type d'image (en gros la version de l'OS) avant toute chose. Pour cela une unique commande:
+  - Il était nécessaire pour volatilityV2 de connaitre le type d'image (en gros la version de l'OS) avant toute chose. Cependant pour la version 3, ce n'est plus utile.
+ 
+En version2:
  
 ```
 python3  vol.py  -f ch2.dmp imageinfo
@@ -109,4 +115,4 @@ Il n'est pas rare que volatility propose plusieurs versions. En général choisi
 
   - Naviguer sur un dump mémoire c'est comme être directement sur l'ordinateur. Vous verrez toutes les traces (fichiers ouverts, exécution dans la base de registre...)
 
-Souvent il faut avoir une idée d'ou chercher, sinon vous pouvez être noyé sous les informations.
+Souvent il faut avoir une idée d'ou chercher, sinon vous pouvez être noyé sous les informations. Dans notre cas, la base de registre doit contenir le nom de l'ordinateur. Trouvez l'entrée de la base de registre qu'il vous faut, et vous trouverez la réponse...
