@@ -74,9 +74,9 @@ Les informations importantes ne se situent pas forcément dans les fichiers (com
 
 Un outil très pratique permet de faire un `dump` de la mémoire, et ensuite de pouvoir la parcourir: `volatility`
 
-
-
 $${\color{green}TP}$$
+
+Dans ce TP, je souhaite connaitre le nom du pc sur lequel le dump a été fait.
 
 * Installation de volatility
 
@@ -96,3 +96,17 @@ python3 vol.py -h
 ```
 
 * Téléchargez le dump mémoire qu'on va analyser: https://sandbox.scourzic.net/td/ch2.tbz2
+
+* Quelques conseils pour bien démarrer:
+
+  - Il est nécessaire pour volatility de connaitre le type d'image (en gros la version de l'OS) avant toute chose. Pour cela une unique commande:
+ 
+```
+volatility  -f ch2.dmp imageinfo
+```
+
+Il n'est pas rare que volatility propose plusieurs versions. En général choisissez la plus récente.
+
+  - Naviguer sur un dump mémoire c'est comme être directement sur l'ordinateur. Vous verrez toutes les traces (fichiers ouverts, exécution dans la base de registre...)
+
+Souvent il faut avoir une idée d'ou chercher, sinon vous pouvez être noyé sous les informations.
