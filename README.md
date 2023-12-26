@@ -42,7 +42,9 @@ Au préalable vous pouvez utiliser la commande suivante pour monter l'image `ima
 sudo mkdir /media/image
 ```
 
-`sudo mount -t auto -o loop /chemin/image.dd /media/image/`
+```
+sudo mount -t auto -o loop /chemin/image.dd /media/image/
+```
 
 Vous pouvez ensuite naviguer dans /media/image et voir son contenu.
 
@@ -52,10 +54,11 @@ Voyez vous des secrets ou informations cachées?
   
 * Maintenant utilisons l'outil `scalpel`. Paramétrez le fichier de configuration:
 
-`nano /etc/scalpel/scalpel.conf`
+```
+nano /etc/scalpel/scalpel.conf
+```
 
 Des résultats plus probants?
-
 
 
 ## Capture mémoire
