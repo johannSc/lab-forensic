@@ -28,7 +28,10 @@ TP:
 ### Fichiers supprimés
 
 Regardez les différents outils suivants:
-`testdisk (photorec) / dd_rescue / scalpel (foremost)`
+
+`markdown
+testdisk (photorec) / dd_rescue / scalpel (foremost)
+`
 
 TP: 
 
