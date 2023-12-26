@@ -13,7 +13,7 @@ Quelques outils à utiliser pour avoir des informations pertinentes sur un fichi
 * `exiftool`: affichier / modifier les métadonnées d'un fichier
 * `binwalk`: outil permettant de rechercher dans une image binaire donnée des fichiers incorporés et du code exécutable
 
-$${\color{green}Green}$$ TP: $$
+$${\color{green}TP}$$
 Récupérez le fichier `anonyme.png` dans le répertoire du dépot git. Je souhaite connaitre qui est le créateur de cette image?
 
 ### Listing fichiers
