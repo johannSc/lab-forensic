@@ -58,6 +58,13 @@ Voyez vous des secrets ou informations cachées?
 nano /etc/scalpel/scalpel.conf
 ```
 
+Puis ajouter dans la partie `png`:
+
+```
+png     y       20000000        \x50\x4e\x47?   \xff\xfc\xfd\xfe
+png     y       20000000        \x89\x50\x4e?
+```
+
 Des résultats plus probants?
 
 
