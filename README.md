@@ -38,7 +38,9 @@ TP:
 On va essayer à partir d'une image de retrouver des informations cachées ou supprimées.
 Au préalable vous pouvez utiliser la commande suivante pour monter l'image `image.dd` présente dans le dépot afin de voir ce qu'elle contient:
 
-```sudo mkdir /media/image```
+```
+sudo mkdir /media/image
+```
 
 `sudo mount -t auto -o loop /chemin/image.dd /media/image/`
 
